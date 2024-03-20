@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.logo{
+    padding: 2%;
+    width: auto;
+}
+
+body {
+    background-color: #F3F5FC;
+    height: 100vh;
+    box-sizing: border-box;
+    color: #0A3871;
+}
+
+#text{
+    border: none; 
+    outline: none;
+    padding: 10px; 
+    font-size: 1.45rem; 
+    font-family: 'Inter', sans-serif;
+    width: 80%;
+    box-sizing: border-box; 
+    background-color: transparent;
+    margin: 0 0 42% 15%;
+    color:#0A3871;
+}
+
+.principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.procura{
+    height: 35%;
+    margin: 100px 0 0 50px;
+    align-items: center;
+}
+
+.mensagem {
+    font-size: 1.25rem;
+    font-family: 'Inter', sans-serif;    
+    color: #343A40;
+    width: 70%;
+    border: solid white;
+    margin: 0 0 0 50px;
+    text-align: center;
+}
+
+.subMensagem {
+    font-size: 0.875rem;
+    color: #495057;
+    width: 75%;
+    margin: 5px 0 0 50px;
+    border: solid white;
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+}
+
+.areaCodigo {
+    background-color: white;
+    border-radius: 15px;
+    align-items: center;
+    height: 580px;
+    margin-right: 2%;
+}
+
+#resultadoCriptografado {
+    position: relative; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    font-weight: bold;
+    width: 280px;
+}
+
+.areaTexto{
+    font-family: 'Inter', sans-serif;
+    font-size: 1.25rem;
+    margin: 0 0 400px 200px;
+}
+
+.baixo{
+    margin: 0 0 100px 200px;
+}
+
+.botoes {
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+}
+
+.botaoUm{
+    margin-right: 55px;
+    background-color: #0A3871;
+    color: azure;
+    font-size: 1.25rem;
+    width: 280px;
+    border-radius: 24px;
+    padding: 16px;
+    cursor: pointer;
+}
+
+.botaoDois{
+    margin-right: 5px;
+    color: #0A3871;
+    font-size: 1.25rem;
+    background-color: #D8DFE8;
+    border: solid #0A3871;
+    width: 280px;
+    border-radius: 24px;
+    padding: 16px;
+    cursor: pointer; 
+}
+
+.Alerta{
+    color: #495057;
+    font-family: 'Inter', sans-serif;
+    margin: 0 0 10px;
+}
+
+footer {
+    background-color:#001835;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+    clear: both;
+    font-family: 'Inter', sans-serif;
+    font-size: 0.9rem;
+}
+
+#github, #gmail{
+    width: 1.4%;
+    margin-right: 0.4%;
+}
+
+#linkedin{
+    width: 1.4%;
+    margin-left: 2%;
+}
+
+.contatos{
+    margin: 2% 0 -0.5%;
+}
+
+.links{
+    justify-content: center;
+    display: flex;
+    margin: 15px 0 15px;
+    list-style-type: none;
+    align-items: center;   
+}
+
+.github{
+    margin-left: 1px;
+}
+
+.linkedin{
+    margin: 0 2% 0 0%;
+}
+
+.encaminhar{
+    text-decoration: none;
+    list-style-type:armenian;
+    color: #F3F5FC;
+}
+
+.encaminhar:hover{
+    color:#3878c7;
+    transition: color 0.9s ease;
+}
+
+@media (max-width: 1000px) {
+    .principal{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-content: center;
+    }
+
+    .procura{
+        height: 35%;
+        margin-left: 25%;
+    }
+
+     .areaCodigo{
+        height: 580px;
+        width: 555px;
+        margin-right: 2%;
+    }
+
+    .baixo{
+        flex-wrap: wrap;
+        margin-left: 14%;
+        margin-top: 5%;
+        position: relative; 
+    }
+
+}
+@media (max-width: 750px) and (max-width: 500px){
+    .procura{
+        height: 30%;
+        font-size: 1.05rem;
+    }
+
+    .areaCodigo{
+        height: 580px;
+        width: 280px;
+        margin-right: 2%;
+    }
+
+    .botoes{
+        flex-direction: column;
+    }
+
+    #resultadoCriptografado {
+            width: 180px;
+            height: 580px;
+            position: relative; 
+            top: 100%; 
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            text-align: center;
+            font-family: 'Inter', sans-serif;
+            font-size: 1.25rem;
+            font-weight: bold;
+            width: 280px;
+    }
+}
